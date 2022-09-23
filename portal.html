@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="portal.css" media="screen">
+
+    <title>Reclamações e Sugestão</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Reclamações e Sugestão</h1>
+        
+        <br>
+    </div>
+
+    <form  action="https://formsubmit.co/webmaster.benguela@unipiaget-angola.org"
+    method="POST"
+    class="form">   
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text"name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label>E-mail</label>
+                <input type="e-mail" name="e-mail" id="E-mail" required>
+            </div>
+           
+        </fieldset>
+
+        
+        <div class="campo">
+            <label><strong>Qual dos Assuntos queres enviar?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="Reclamações"checked>Reclamações
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Sujestões">Sugestões
+            </label>
+            
+        </div>
+
+        <div>
+            <label for="sexo"><strong>Sexo</strong></label>
+            <select id="sexo">
+                <option selected disabled value="Selecione">Selecione</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Outro</option>
+            </select>
+        </div>
+        <fieldset class="grupo"><br>
+            <div id="checkbox">
+                <label><strong> Selecione o/s Sectore/s</strong> </label><br><br>
+                <input type="checkbox" id="piaget" name="piaget" value="Contablidade">
+                <label for="piaget">Contabilidade</label>
+                <input type="checkbox" id="piaget" name="piaget" value="DT">
+                <label for="piaget">DT</label>
+                <input type="checkbox" id="piaget" name="piaget" value="GCI">
+                <label for="piaget">GCI</label>
+                <input type="checkbox" id="piaget" name="piaget" value="GAS">
+                <label for="piaget">GAS</label>
+                <input type="checkbox" id="piaget" name="piaget" value="RH">
+                <label for="piaget">RH</label><br>
+                <input type="checkbox" id="piaget" name="piaget" value="Secretaria">
+                <label for="piaget">Secretaria</label>
+                <input type="checkbox" id="piaget" name="piaget" value="SA">
+                <label for="piaget">SA</label>
+                <input type="checkbox" id="piaget" name="piaget" value="SD">
+                <label for="piaget">SD</label>
+                <input type="checkbox" id="piaget" name="piaget" value="SM">
+                <label for="piaget">SM</label>
+                <input type="checkbox" id="piaget" name="piaget" value="Tesouraria">
+                <label for="piaget">Tesouraria</label>
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label><strong>Escreva aqui o seu comentário...</strong></label><br><br>
+
+            <textarea name="message" id="message" required></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input
+            type="hidden"
+            name="_next"
+            value="https://yourdomain.co/thanks.html"
+          />
+        </div>
+        <button class="button"type="submit">Enviar</button>
+        
+    </form>
+ 
+</body>
+</html>
